@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style_index.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg d-none">
+            <div class="container">
+              <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class=" btn btn-outline-warning nav-link logout text-white" aria-current="page" href="#">Log Out</a>
+                  </li>
+                  
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        
+        <div class=" col-sm-12 d-flex justify-content-center align-items-center vh-100 text-center">
+          <div id="mr" class=" mt-5 col-sm-6   bg py-5">
+                <h2 class="py-4 mb-3 text-center text-info">Smart Login System</h2>
+
+                <input id="signupname" class="w-75  text-white m-auto d-none bg-transparent form-control mb-4 " placeholder="Enter Your Name" type="text">
+                
+                <input id="email" class="w-75 m-auto  text-white bg-transparent form-control mb-4" placeholder="Enter Your Email" type="email">
+                
+                <input  id="password" class="w-75 m-auto  text-white bg-transparent form-control mb-4" placeholder="Enter Your Password" type="password">
+                
+                <p class="text-success text-center d-none true">Success</p>
+                <p class="text-danger text-center d-none false">incorrect email or password</p>
+                <p class="text-danger text-center d-none inputempty">All input is required</p>
+                <p class="text-danger text-center d-none inputfalse"> email already exists </p>
+                <button class="w-75 login   btn btn-outline-info ">log in</button>
+                <button class="w-75 regset   btn btn-outline-info d-none">sign up</button>
+                <p class="text-center text-white mt-5">Don’t have an account?
+                    <a class=" ps-1 text-white signup" href="#">sign up</a>
+                    <a class=" ps-1 d-none text-white signin" href="#">sign in</a>
+                </p>
+
+          </div>
+          <div id="afterlogin" class="col-sm-6 bg w-50 h-25 d-flex justify-content-center align-items-center d-none">
+            <h3 class="text-white para"></h3>
+          </div>
+        </div>
+     
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+
+</html>
